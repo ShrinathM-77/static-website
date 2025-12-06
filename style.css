@@ -1,0 +1,131 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* --- Navbar --- */
+.navbar {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.primary {
+    background: #4F46E5;
+    color: white;
+}
+
+.secondary {
+    background: #111827;
+    color: white;
+    margin-top: 20px;
+}
+
+/* --- Hero Section --- */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 40px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #555;
+    max-width: 460px;
+}
+
+.hero-img img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* --- Features Section --- */
+.features {
+    padding: 60px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    padding: 25px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* --- Footer --- */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #f3f4f6;
+    margin-top: 40px;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+    }
+}
